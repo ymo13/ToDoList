@@ -4,14 +4,14 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
-import { ToDoListComponentComponent } from './to-do-list-component/to-do-list-component.component';
-import { CalculatorComponentComponent } from './calculator-component/calculator-component.component';
+import { ToDoListComponent } from './to-do-list/to-do-list.component';
+import { CalculatorComponent } from './calculator/calculator.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ToDoListComponentComponent,
-    CalculatorComponentComponent
+    ToDoListComponent,
+    CalculatorComponent,
   ],
   imports: [
     BrowserModule,
