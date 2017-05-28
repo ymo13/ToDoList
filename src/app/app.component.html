@@ -1,10 +1,29 @@
-<h1>{{ title }}</h1>
+<!--<h1>{{ title }}</h1>
 <nav>
 	<ul>
 		<li><a routerLink="/calculator" routerLinkActive="active">Calculator</a></li>
 		<li><a routerLink="/to-do-list" routerLinkActive="active">To-Do-List</a></li>	
 		</ul>		
-</nav>
+</nav>-->
+
+<md-toolbar color="primary"> 
+	<span>
+		<md-menu #appMenu="mdMenu">
+			<button md-menu-item routerLink="/calculator" routerLinkActive="active">Calculator</button>
+			<button md-menu-item routerLink="/to-do-list" routerLinkActive="active">To-Do-List</button>
+		</md-menu>
+
+		<button md-button [mdMenuTriggerFor]="appMenu" style="float: ">
+  	 		<md-icon>more_vert</md-icon>
+  	 		<span>{{ title }}</span>
+		</button>
+	</span>
+
+	<span style="flex: 1 1 auto;"></span>
+
+	<span></span>
+	
+</md-toolbar>
 
 <router-outlet></router-outlet>
 

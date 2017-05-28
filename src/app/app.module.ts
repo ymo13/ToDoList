@@ -3,6 +3,9 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule, Routes} from '@angular/router';
+import { MaterialModule } from '@angular/material';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MdMenuModule, MdButtonModule, MdToolbarModule } from '@angular/material';
 
 
 import { AppComponent } from './app.component';
@@ -18,9 +21,14 @@ import { CalculatorComponent } from './calculator/calculator.component';
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
+    MaterialModule,
     FormsModule,
     HttpModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MdMenuModule,
+    MdButtonModule,
+    MdToolbarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
